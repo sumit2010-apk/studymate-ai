@@ -5,7 +5,7 @@
 ## 🚀 Live Demo
 
 🌐 **Live Application:**  
-https://vercel.com/sumit2010-apks-projects/studymate-ai
+https://studymate-ai-swart.vercel.app
 
 📂 **GitHub Repository:**  
 https://github.com/sumit2010-apk/studymate-ai
