@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 StudyMate AI
 
-## Getting Started
+> An AI-powered personalized learning platform that helps students create study materials, generate quizzes, and learn from PDF documents.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 **Live Application:**  
+https://vercel.com/sumit2010-apks-projects/studymate-ai
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 **GitHub Repository:**  
+https://github.com/sumit2010-apk/studymate-ai
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 About the Project
 
-## Learn More
+StudyMate AI is a full-stack AI-powered study assistant designed to make learning more personalized and interactive.
 
-To learn more about Next.js, take a look at the following resources:
+Users can create an account, generate AI-powered study materials, take quizzes, track their performance, and upload PDF documents for learning.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application combines **Next.js, TypeScript, Supabase, Tailwind CSS, and AI APIs** to provide a complete learning experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔐 Authentication
+- User registration and login
+- Supabase Authentication
+- Secure user sessions
+- User-specific data
+- Row Level Security (RLS)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🤖 AI Study Material Generator
+Generate personalized learning content based on:
+
+- Subject
+- Topic
+- Material type
+- Difficulty level
+
+Supported material types:
+
+- 📚 Study Notes
+- ❓ MCQs
+- 🗂️ Flashcards
+- 📝 Summaries
+
+### 🎯 AI Quiz Generator
+
+Create interactive quizzes from any topic.
+
+Features:
+
+- Automatically generated questions
+- Multiple-choice answers
+- Instant scoring
+- Correct/incorrect answer highlighting
+- Explanations
+- Quiz result persistence
+
+### 📊 Quiz History
+
+Users can view their previous quiz attempts including:
+
+- Subject
+- Topic
+- Score
+- Percentage
+- Date and time
+
+### 📄 PDF Learning
+
+Users can:
+
+- Upload PDF documents
+- Extract text from PDFs
+- Preview extracted content
+- Use the extracted material for learning
+
+### 💾 Study Material History
+
+Generated materials are stored for each user and displayed on the dashboard.
+
+### 🔒 Secure Database
+
+Supabase Row Level Security ensures users can only access their own:
+
+- Profiles
+- Study materials
+- Quiz results
+
+### 🚀 Production Deployment
+
+The application is deployed using Vercel and connected to GitHub for continuous deployment.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+
+- Next.js API Routes
+- Supabase
+- PostgreSQL
+
+### Authentication
+
+- Supabase Auth
+
+### AI
+
+- OpenRouter AI API
+
+### PDF Processing
+
+- PDF parsing/extraction
+
+### Deployment
+
+- Vercel
+- GitHub
+
+---
+
+## 🏗️ Project Structure
+
+```text
+studymate-ai/
+│
+├── app/
+│   ├── api/
+│   │   ├── generate/
+│   │   │   └── route.ts
+│   │   │
+│   │   └── pdf/
+│   │       └── route.ts
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx
+│   │
+│   ├── generate/
+│   │   └── page.tsx
+│   │
+│   ├── login/
+│   │   └── page.tsx
+│   │
+│   ├── signup/
+│   │   └── page.tsx
+│   │
+│   ├── quiz/
+│   │   └── page.tsx
+│   │
+│   ├── pdf/
+│   │   └── page.tsx
+│   │
+│   ├── materials/
+│   │   └── [id]/
+│   │
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│
+├── lib/
+│   └── supabase/
+│       ├── client.ts
+│       ├── server.ts
+│       └── proxy.ts
+│
+├── public/
+│
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
